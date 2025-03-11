@@ -48,7 +48,7 @@ source pvseg_env/bin/activate
 
 # For Windows
 python -m venv pvseg_env
-pvseg_env\Scriptsctivate
+pvseg_env\Scriptsactivate
 ```
 
 ### 3. Install Dependencies
