@@ -87,7 +87,6 @@ PV-Solar-Segmentation/
 ├── src/                     # Contains the source code
 │   ├── model.py             # Defines the U-Net model architecture
 │   ├── utils.py             # Utility functions (e.g., dataset handling)
-│   ├── segment.py           # Script for segmentation (image inference)
 │   ├── train.py             # Training script (if you wish to train the model)
 │   ├── evaluate.py          # Script for evaluating model performance
 ├── model.pth                # Trained model weights (if available)
@@ -107,11 +106,11 @@ PV-Solar-Segmentation/
 
 ### 1. Prepare the Model for Inference
 
-Once you have trained the model or downloaded a pre-trained model (`model.pth`), you can use the `segment.py` script to apply segmentation to images.
+Once you have trained the model or downloaded a pre-trained model (`model.pth`), you can use the `evaluate.py` script to apply segmentation to images.
 
 ### 2. Configure the Script
 
-Modify the `segment.py` script to specify the following paths directly in the code:
+Modify the `evaluate.py` script to specify the following paths directly in the code:
 
 - **Model Path**: `model_path = "model.pth"`
 - **Input Image/Folder Path**: `input_path = "path/to/your/input"` (Can be a single image or folder of images)
